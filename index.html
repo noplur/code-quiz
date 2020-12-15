@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http=equiv="X-UA-Comaptible" content="ie=edge">
-    <title>Code-Quiz</title>
+    <title>Taskinator</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -30,16 +30,27 @@
             </div>
         </form>
     </header>
-    <main class="page-content">
-        <section class="task-list-wrapper">
+    <main class="page-content" id="page-content">
+        <!-- Tasks To Do -->
+    <section class="task-list-wrapper">
         <h2 class="list-title">Tasks To Do</h2>
-        <ul class="task-list" id="tasks-to-do">
-        </ul>
-        </section>
+        <ul class="task-list" id="tasks-to-do"></ul>
+    </section>
+        <!-- Tasks In Progress -->
+    <section class="task-list-wrapper">
+        <h2 class="list-title">Tasks In Progress</h2>
+        <ul class="task-list" id="tasks-in-progress"></ul>
+    </section>
+  
+  <!-- Tasks Completed -->
+    <section class="task-list-wrapper">
+        <h2 class="list-title">Tasks Completed</h2>
+        <ul class="task-list" id="tasks-completed"></ul>
+    </section>
     </main>
 
 <footer>
-    &copy;2020 by Code Quiz
+    &copy;2020 by Taskinator
 </footer>
 
     <script src="./assets/js/script.js"></script>
