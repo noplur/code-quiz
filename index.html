@@ -5,47 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http=equiv="X-UA-Comaptible" content="ie=edge">
-    <title>Taskinator</title>
+    <title>Code Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <h1 class="page-title">Code Quiz</h1>
-        <p>Click the button below to add a new task!</p>
-        <form id= "task-form">
-            <div class="form-group">
-                <input type="text" name="task-name" placeholder="Enter Task Name" />
-            </div>
-            <div class="form-group">
-                <select name="task-type" class="select-dropdown">
-                    <option value="" disabled selected>Pick a task type</option>
-                    <option value="Print">Print</option>
-                    <option value="Web">Web</option>
-                    <option value="Mobile">Mobile</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <button class="btn" id="save-task" type="submit" draggable="true">Add Task</button>
-            </div>
-        </form>
+        <h1 class="page-title">Coding Quiz</h1>
+        <h3 id="counter"></h3>
     </header>
-    <main class="page-content" id="page-content">
-        <!-- Tasks To Do -->
-    <section class="task-list-wrapper">
-        <h2 class="list-title">Tasks To Do</h2>
-        <ul class="task-list" id="tasks-to-do"></ul>
-    </section>
-        <!-- Tasks In Progress -->
-    <section class="task-list-wrapper">
-        <h2 class="list-title">Tasks In Progress</h2>
-        <ul class="task-list" id="tasks-in-progress"></ul>
-    </section>
-  
-  <!-- Tasks Completed -->
-    <section class="task-list-wrapper">
-        <h2 class="list-title">Tasks Completed</h2>
-        <ul class="task-list" id="tasks-completed"></ul>
+    <main>
+        <section id="quiz">
+            <h2>Coding Quiz Challenge</h2>
+            <h3>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds!</h3>
+            <button id="startBtn">Start Quiz</button>
+        </section>
+        <section id="questionSection" class="hidden">
+            <div id="question"></div>
+            <div id="answers"></div>
+        </section>
+        <section id="results" class="hidden">
+            <h2>All done!</h2>
+            <h3>Your final score is</h3>
+
     </section>
     </main>
 
